@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>アプリ一覧</h3><br>
-    <a href="{{url_for('keisan')}}">給与計算アプリ</a><br>
-    <a href="{{url_for('circle')}}">円の計算アプリ</a>
+    <form action="{{url_for('keisan_result')}}">
+    時給:<input type="text" name="a"><br>
+    労働時間:<input type="text" name="b"><br>
+        <input type="submit" value="計算">
+    </form>
+    
 </body>
 </html>
